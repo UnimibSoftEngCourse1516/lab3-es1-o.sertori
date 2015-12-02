@@ -1,13 +1,13 @@
 package com.ottaviosertori.quickstart;
 
-/**
- * Hello world!
- *
- */
+import com.google.gson.Gson;
+
 public class App 
 {
-    public static void main( String[] args )
+    public static void main(String[] args)
     {
-        System.out.println( "Hello World!" );
+      Gson gson = new Gson();
+        System.out.println(gson.toJson("Hello World!"));
     }
-}
+} 
+
